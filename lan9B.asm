@@ -9,7 +9,6 @@
     value_before db "The value of x: ", 10, 13, "$"
     value_after db "The value of y=3x: ", 10, 13, "$"
     msg3 db "ERROR ", 10, 13, "$"
-    stng db 100 dup (?)
     minx db ?
     maxx db ?
     num db ?

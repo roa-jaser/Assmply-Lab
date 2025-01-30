@@ -28,7 +28,7 @@ main:
     mov ah, 1
     int 21h
     
-    sub al, '0'
+    sub al, 30h
     mov cl, al
 
     mov ah, 9

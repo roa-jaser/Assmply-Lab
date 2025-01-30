@@ -15,11 +15,11 @@ mov dx, offset msg1
 int 21h 
 
 mov ah,1
-int 21h;reed from the screen
+int 21h; reed from the screen
 
- 
-mov bl,al  ; stor the value in reg.
+ mov bl,al  ; stor the value in reg.
 sub bl,20h  ; sub 20 from the asci to get the uppercase
+
 
 mov ah,9
 mov dx,offset msg2

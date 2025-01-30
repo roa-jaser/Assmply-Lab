@@ -14,12 +14,14 @@ mov dx,offset msg
 int 21h
 
 mov cx,26
-mov dl,41h
-mov dh,0
+mov dl,'a'
+ 
 
 l1:
 mov ah,2
 int 21h
+
+inc dl
 loop l1
 
 

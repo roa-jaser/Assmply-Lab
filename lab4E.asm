@@ -3,7 +3,7 @@
 dosseg
 .model small
 .data
-msg db "enter any mum/char ",13,10,"$"
+msg db "enter any num/char ",13,10,"$"
 msg2 db "number",13,10,"$"
 msg3 db " other char",13,10,"$"
 .code 

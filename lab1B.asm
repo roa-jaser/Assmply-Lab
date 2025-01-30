@@ -1,4 +1,4 @@
-//Write an assembly language program to trace 4 arithmatic and 4 logical instructions of your choice
+;Write an assembly language program to trace 4 arithmatic and 4 logical instructions of your choice
 dosseg
 .model small
 .data
@@ -7,7 +7,8 @@ dosseg
 main:
 ;arithmetic instractions
 mov ax,@data
-mov bx,ax
+mov ds,ax
+
 mov ax,3Fh
 add ax,24h
 

@@ -20,7 +20,7 @@ dosseg
  mov ah,1
  int 21h
 
- sub al,'0' ;Convert ASCII to integer
+ sub al,30h ;Convert ASCII to integer
  mov bl,al   ; Store first digit in bl
 
 
@@ -32,11 +32,11 @@ dosseg
  mov ah,1
  int 21h
 
- sub al,'0'
+ sub al,30h
  mov bh,al
 
  ;get the sum 
- add bl,al
+ add bl,bh
 
  ;print the result 
  mov dx,offset res
@@ -44,7 +44,7 @@ dosseg
  int 21h
 
  mov al,bl
- add al, '0'      ; Convert to ASCII
+ add al, 30h     ; Convert to ASCII
  mov dl, al
  mov ah, 2
  int 21h
