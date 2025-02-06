@@ -87,7 +87,7 @@ clear_pixel:
 
 exit_program:
     ; عرض رسالة الخروج
-    lea dx, msgExit
+    mov dx, offset msgExit
     mov ah, 9
     int 21h
 
